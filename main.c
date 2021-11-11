@@ -1,3 +1,5 @@
+//lab6-question1
+
 #include <msp430.h> 
 volatile long temp, temRaw;
 void ConfigureAdc_temp();
