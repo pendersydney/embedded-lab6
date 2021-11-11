@@ -13,7 +13,7 @@ int main(void)
     ConfigureAdc_temp();
     _delay_cycles(5);                       // wait for ADC Ref to settle
     while(1){
-        tempRaw = ADC10MEM;                 // red the converted date into a variable
+        tempRaw = ADC10MEM;                 // read the converted date into a variable
         temp = (((tempRaw-673)*423)/1024);  // converts to degree celsius
     }
 }
